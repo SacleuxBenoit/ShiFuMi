@@ -17,9 +17,9 @@ include('../database/connection_database.php');
         <p>PlacerHolder image</p>
         
         <p>
-            <button onclick="rock()">rock</button>
-            <button onclick="paper()">paper</button>
-            <button onclick="scissors()">scissors</button>
+            <button onclick="rock()" id="playerRock">rock</button>
+            <button onclick="paper()" id="playerPaper">paper</button>
+            <button onclick="scissors()" id="playerScissors">scissors</button>
         </p>
     </div>
 
@@ -27,9 +27,9 @@ include('../database/connection_database.php');
         <p>PlacerHolder image</p>
         
         <p>
-            <button>rock</button>
-            <button>paper</button>
-            <button>scissors</button>
+            <button id="botRock">rock</button>
+            <button id="botPaper">paper</button>
+            <button id="botScissors">scissors</button>
         </p>
     </div>
 
