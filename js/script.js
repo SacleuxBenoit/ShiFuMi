@@ -15,7 +15,7 @@ let botRock = document.getElementById('botRock');
 let botPaper = document.getElementById('botPaper');
 let botScissors = document.getElementById('botScissors');
 
-// function 
+// function button
 
 function rock(){
     result.textContent = "rock";
@@ -32,6 +32,68 @@ function scissors(){
     botChoice();
 }
 
+// function bot
+
+function botChoice(){
+    let choice = ['rock', 'paper', 'scissors'];
+
+    let randomChoice = Math.floor(Math.random() * choice.length);
+    console.log(randomChoice, choice[randomChoice]);
+
+    // verify choice of the user, then display the result
+    if(result.textContent == 'rock'){
+        switch(choice[randomChoice]){
+
+            case 'rock':
+                console.log('equal');
+            break;
+    
+            case 'paper':
+                console.log('lose');
+            break;
+    
+            case 'scissors':
+                console.log('win');
+            break;
+        }
+    }
+    else if(result.textContent == 'paper'){
+        switch(choice[randomChoice]){
+
+            case 'rock':
+                console.log('win');
+            break;
+    
+            case 'paper':
+                console.log('equal');
+            break;
+    
+            case 'scissors':
+                console.log('lose');
+            break;
+        }
+    }
+    else if(result.textContent == 'scissors'){
+        switch(choice[randomChoice]){
+
+            case 'rock':
+                console.log('lose');
+            break;
+    
+            case 'paper':
+                console.log('win');
+            break;
+    
+            case 'scissors':
+                console.log('equal');
+            break;
+        }
+    }
+
+}
+
+// else
+
 function disableButton(){
     playerRock.disabled = 'true';
     playerPaper.disabled = 'true';
@@ -40,11 +102,4 @@ function disableButton(){
     botRock.disabled = 'true';
     botPaper.disabled = 'true';
     botScissors.disabled = 'true';
-}
-
-function botChoice(){
-    let choice = ['rock', 'paper', 'scissors'];
-
-    let randomChoice = Math.floor(Math.random() * choice.length);
-    console.log(randomChoice, choice[randomChoice]);
 }
