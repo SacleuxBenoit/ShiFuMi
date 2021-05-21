@@ -17,6 +17,11 @@ let botRock = document.getElementById('botRock');
 let botPaper = document.getElementById('botPaper');
 let botScissors = document.getElementById('botScissors');
 
+// get life player && bot
+
+let lifePlayer = document.getElementById('lifePlayer');
+let lifeBot = document.getElementById('lifeBot');
+
 // function button
 
 function rock(){
@@ -43,7 +48,7 @@ function botChoice(){
     let choice = ['rock', 'paper', 'scissors'];
 
     let randomChoice = Math.floor(Math.random() * choice.length);
-    
+
     // verify choice of the bot
 
     if(choice[randomChoice] == 'rock'){

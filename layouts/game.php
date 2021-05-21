@@ -21,6 +21,10 @@ include('../database/connection_database.php');
             <button onclick="paper()" id="playerPaper">paper</button>
             <button onclick="scissors()" id="playerScissors">scissors</button>
         </p>
+
+        <p id="lifePlayer">
+            life : 3
+        </p>
     </div>
 
     <div id="bot">
@@ -30,6 +34,10 @@ include('../database/connection_database.php');
             <button id="botRock">rock</button>
             <button id="botPaper">paper</button>
             <button id="botScissors">scissors</button>
+        </p>
+
+        <p id="lifeBot">
+            life : 3
         </p>
     </div>
 
