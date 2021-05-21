@@ -14,7 +14,7 @@ include('../database/connection_database.php');
 <body>
 
     <div id="player">
-        <p>PlacerHolder image</p>
+        <p id="choicePlayerImages">PlacerHolder image</p>
         
         <p>
             <button onclick="rock()" id="playerRock">rock</button>
@@ -24,7 +24,7 @@ include('../database/connection_database.php');
     </div>
 
     <div id="bot">
-        <p>PlacerHolder image</p>
+        <p id="choiceBotImages">PlacerHolder image</p>
         
         <p>
             <button id="botRock">rock</button>

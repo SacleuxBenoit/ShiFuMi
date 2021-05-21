@@ -2,6 +2,8 @@ let player = document.getElementById('player');
 let bot = document.getElementById('bot');
 let result = document.getElementById('result');
 
+let choicePlayerImages = document.getElementById('choicePlayerImages');
+let choiceBotImages = document.getElementById('choiceBotImages');
 
 // get Button player
 
@@ -19,16 +21,19 @@ let botScissors = document.getElementById('botScissors');
 
 function rock(){
     result.textContent = "rock";
+    choicePlayerImages.textContent = "rock";
     botChoice();
 }
 
 function paper(){
     result.textContent = "paper";
+    choicePlayerImages.textContent = "paper";
     botChoice();
 }
 
 function scissors(){
     result.textContent = "scissors";
+    choicePlayerImages.textContent = "scissors";
     botChoice();
 }
 
@@ -39,6 +44,18 @@ function botChoice(){
 
     let randomChoice = Math.floor(Math.random() * choice.length);
     console.log(randomChoice, choice[randomChoice]);
+
+    // verify choice of the bot
+
+    if(choice[randomChoice] == 'rock'){
+        choiceBotImages.textContent = 'rock';
+    }
+    else if(choice[randomChoice] == 'paper'){
+        choiceBotImages.textContent = 'paper';
+    }
+    else if(choice[randomChoice] == 'scissors'){
+        choiceBotImages.textContent = 'scissors';
+    }
 
     // verify choice of the user, then display the result
     if(result.textContent == 'rock'){
