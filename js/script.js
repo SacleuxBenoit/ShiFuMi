@@ -45,15 +45,15 @@ function botChoice(){
         switch(choice[randomChoice]){
 
             case 'rock':
-                console.log('equal');
+                result.textContent = "it's a tie !"
             break;
     
             case 'paper':
-                console.log('lose');
+                result.textContent = 'player lose';
             break;
     
             case 'scissors':
-                console.log('win');
+                result.textContent = 'player win';
             break;
         }
     }
@@ -61,15 +61,15 @@ function botChoice(){
         switch(choice[randomChoice]){
 
             case 'rock':
-                console.log('win');
+                result.textContent = 'player win';
             break;
     
             case 'paper':
-                console.log('equal');
+                result.textContent = "it's a tie !"
             break;
     
             case 'scissors':
-                console.log('lose');
+                result.textContent = 'player lose';
             break;
         }
     }
@@ -77,15 +77,15 @@ function botChoice(){
         switch(choice[randomChoice]){
 
             case 'rock':
-                console.log('lose');
+                result.textContent = 'player lose';
             break;
     
             case 'paper':
-                console.log('win');
+                result.textContent = 'player win';
             break;
     
             case 'scissors':
-                console.log('equal');
+                result.textContent = "it's a tie !"
             break;
         }
     }
