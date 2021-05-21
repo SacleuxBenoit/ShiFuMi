@@ -19,14 +19,17 @@ let botScissors = document.getElementById('botScissors');
 
 function rock(){
     result.textContent = "rock";
+    botChoice();
 }
 
 function paper(){
     result.textContent = "paper";
+    botChoice();
 }
 
 function scissors(){
     result.textContent = "scissors";
+    botChoice();
 }
 
 function disableButton(){
@@ -37,4 +40,11 @@ function disableButton(){
     botRock.disabled = 'true';
     botPaper.disabled = 'true';
     botScissors.disabled = 'true';
+}
+
+function botChoice(){
+    let choice = ['rock', 'paper', 'scissors'];
+
+    let randomChoice = Math.floor(Math.random() * choice.length);
+    console.log(randomChoice, choice[randomChoice]);
 }
