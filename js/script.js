@@ -43,8 +43,7 @@ function botChoice(){
     let choice = ['rock', 'paper', 'scissors'];
 
     let randomChoice = Math.floor(Math.random() * choice.length);
-    console.log(randomChoice, choice[randomChoice]);
-
+    
     // verify choice of the bot
 
     if(choice[randomChoice] == 'rock'){
