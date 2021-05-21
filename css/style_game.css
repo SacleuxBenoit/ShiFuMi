@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    '. player bot .'
+    '. result result .';
+}
+
+#player{
+    grid-area: player;
+}
+
+#bot{
+    grid-area: bot;
+}
+
+#result{
+    grid-area: result;
+    text-align: center;
+}
