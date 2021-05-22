@@ -76,13 +76,13 @@ function botChoice(){
     
             case 'paper':
                 result.textContent = 'the player lost this round';
-                console.log(lifePlayer -= 1);
+                lifePlayer -= 1;
                 paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
             break;
     
             case 'scissors':
                 result.textContent = 'the player won this round';
-                console.log(lifeBot -= 1);
+                lifeBot -= 1;
                 paragraphLifeBot.textContent = 'life : ' + lifeBot;
             break;
         }
@@ -92,7 +92,7 @@ function botChoice(){
 
             case 'rock':
                 result.textContent = 'the player won this round';
-                console.log(lifeBot -= 1);
+                lifeBot -= 1;
                 paragraphLifeBot.textContent = 'life : ' + lifeBot;
             break;
     
@@ -102,7 +102,7 @@ function botChoice(){
     
             case 'scissors':
                 result.textContent = 'the player lost this round';
-                console.log(lifePlayer -= 1);
+                lifePlayer -= 1;
                 paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
             break;
         }
@@ -112,13 +112,13 @@ function botChoice(){
 
             case 'rock':
                 result.textContent = 'the player lost this round';
-                console.log(lifePlayer -= 1);
+                lifePlayer -= 1;
                 paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
             break;
     
             case 'paper':
                 result.textContent = 'the player won this round';
-                console.log(lifeBot -= 1);
+                lifeBot -= 1
                 paragraphLifeBot.textContent = 'life : ' + lifeBot;
             break;
     
@@ -135,12 +135,14 @@ function botChoice(){
 function verifyLifePlayer(){
     if(lifePlayer == 0){
         disableButtonPlayer();
+        result.textContent = "the winner is : the bot"
     }
 }
 
 function verifyLifeBot(){
     if(lifeBot == 0){
         disableButtonPlayer();
+        result.textContent = "the winner is : the player"
     }
 }
 
