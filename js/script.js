@@ -117,15 +117,3 @@ function botChoice(){
     }
 
 }
-
-// else
-
-function disableButton(){
-    playerRock.disabled = 'true';
-    playerPaper.disabled = 'true';
-    playerScissors.disabled = 'true';
-
-    botRock.disabled = 'true';
-    botPaper.disabled = 'true';
-    botScissors.disabled = 'true';
-}

@@ -31,9 +31,9 @@ include('../database/connection_database.php');
         <p id="choiceBotImages">PlacerHolder image</p>
         
         <p>
-            <button id="botRock">rock</button>
-            <button id="botPaper">paper</button>
-            <button id="botScissors">scissors</button>
+            <button id="botRock" disabled>rock</button>
+            <button id="botPaper" disabled>paper</button>
+            <button id="botScissors" disabled>scissors</button>
         </p>
 
         <p id="paragraphLifeBot">
