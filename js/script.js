@@ -134,12 +134,18 @@ function botChoice(){
 
 function verifyLifePlayer(){
     if(lifePlayer == 0){
-        console.log('player lose');
+        disableButtonPlayer();
     }
 }
 
 function verifyLifeBot(){
     if(lifeBot == 0){
-        console.log('bot lose')
+        disableButtonPlayer();
     }
+}
+
+function disableButtonPlayer(){
+    playerRock.disabled = "true";
+    playerPaper.disabled = "true";
+    playerScissors.disabled = "true";
 }
