@@ -128,4 +128,18 @@ function botChoice(){
         }
     }
 
+    verifyLifePlayer();
+    verifyLifeBot()
+}
+
+function verifyLifePlayer(){
+    if(lifePlayer == 0){
+        console.log('player lose');
+    }
+}
+
+function verifyLifeBot(){
+    if(lifeBot == 0){
+        console.log('bot lose')
+    }
 }
