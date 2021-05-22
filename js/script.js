@@ -22,6 +22,11 @@ let botScissors = document.getElementById('botScissors');
 let paragraphLifePlayer = document.getElementById('paragraphLifePlayer');
 let paragraphLifeBot = document.getElementById('paragraphLifeBot');
 
+// init life of player && bot
+
+let lifePlayer = 3;
+let lifeBot = 3;
+
 // function button
 
 function rock(){
