@@ -76,10 +76,12 @@ function botChoice(){
     
             case 'paper':
                 result.textContent = 'player lose';
+                console.log(lifePlayer -= 1);
             break;
     
             case 'scissors':
                 result.textContent = 'player win';
+                console.log(lifeBot -= 1);
             break;
         }
     }
@@ -88,6 +90,7 @@ function botChoice(){
 
             case 'rock':
                 result.textContent = 'player win';
+                console.log(lifeBot -= 1);
             break;
     
             case 'paper':
@@ -96,6 +99,7 @@ function botChoice(){
     
             case 'scissors':
                 result.textContent = 'player lose';
+                console.log(lifePlayer -= 1);
             break;
         }
     }
@@ -104,10 +108,12 @@ function botChoice(){
 
             case 'rock':
                 result.textContent = 'player lose';
+                console.log(lifePlayer -= 1);
             break;
     
             case 'paper':
                 result.textContent = 'player win';
+                console.log(lifeBot -= 1);
             break;
     
             case 'scissors':
