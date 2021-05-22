@@ -19,8 +19,8 @@ let botScissors = document.getElementById('botScissors');
 
 // get life player && bot
 
-let lifePlayer = document.getElementById('lifePlayer');
-let lifeBot = document.getElementById('lifeBot');
+let paragraphLifePlayer = document.getElementById('paragraphLifePlayer');
+let paragraphLifeBot = document.getElementById('paragraphLifeBot');
 
 // function button
 

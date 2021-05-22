@@ -22,7 +22,7 @@ include('../database/connection_database.php');
             <button onclick="scissors()" id="playerScissors">scissors</button>
         </p>
 
-        <p id="lifePlayer">
+        <p id="paragraphLifePlayer">
             life : 3
         </p>
     </div>
@@ -36,7 +36,7 @@ include('../database/connection_database.php');
             <button id="botScissors">scissors</button>
         </p>
 
-        <p id="lifeBot">
+        <p id="paragraphLifeBot">
             life : 3
         </p>
     </div>
