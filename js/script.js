@@ -75,13 +75,13 @@ function botChoice(){
             break;
     
             case 'paper':
-                result.textContent = 'player lose';
+                result.textContent = 'the player lost this round';
                 console.log(lifePlayer -= 1);
                 paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
             break;
     
             case 'scissors':
-                result.textContent = 'player win';
+                result.textContent = 'the player won this round';
                 console.log(lifeBot -= 1);
                 paragraphLifeBot.textContent = 'life : ' + lifeBot;
             break;
@@ -91,7 +91,7 @@ function botChoice(){
         switch(choice[randomChoice]){
 
             case 'rock':
-                result.textContent = 'player win';
+                result.textContent = 'the player won this round';
                 console.log(lifeBot -= 1);
                 paragraphLifeBot.textContent = 'life : ' + lifeBot;
             break;
@@ -101,7 +101,7 @@ function botChoice(){
             break;
     
             case 'scissors':
-                result.textContent = 'player lose';
+                result.textContent = 'the player lost this round';
                 console.log(lifePlayer -= 1);
                 paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
             break;
@@ -111,13 +111,13 @@ function botChoice(){
         switch(choice[randomChoice]){
 
             case 'rock':
-                result.textContent = 'player lose';
+                result.textContent = 'the player lost this round';
                 console.log(lifePlayer -= 1);
                 paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
             break;
     
             case 'paper':
-                result.textContent = 'player win';
+                result.textContent = 'the player won this round';
                 console.log(lifeBot -= 1);
                 paragraphLifeBot.textContent = 'life : ' + lifeBot;
             break;
