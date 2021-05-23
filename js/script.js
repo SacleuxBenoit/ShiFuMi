@@ -159,4 +159,6 @@ function buttonReset(){
     paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
     paragraphLifeBot.textContent = 'life : ' + lifeBot;
     result.textContent = " ";
+    choicePlayerImages.textContent = "PlacerHolder image";
+    choiceBotImages.textContent = "PlacerHolder image";
 }
