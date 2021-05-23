@@ -43,6 +43,10 @@ include('../database/connection_database.php');
 
     <div id="result"></div>
 
+    <div id="divButtonPlayAgain">
+        <button id="buttonPlayAgain" onclick="buttonReset()">Play again</button>
+    </div>
+
     <script src="../js/script.js"></script>
 </body>
 </html>
