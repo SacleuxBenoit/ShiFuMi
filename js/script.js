@@ -151,3 +151,12 @@ function disableButtonPlayer(){
     playerPaper.disabled = "true";
     playerScissors.disabled = "true";
 }
+
+function buttonReset(){
+    lifePlayer = 3;
+    lifeBot = 3;
+
+    paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
+    paragraphLifeBot.textContent = 'life : ' + lifeBot;
+    result.textContent = " ";
+}
