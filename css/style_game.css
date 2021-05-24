@@ -3,7 +3,8 @@ body{
     display: grid;
     grid-template-areas: 
     '. player bot .'
-    '. result result .';
+    '. result result .'
+    '. divButtonPlayAgain divButtonPlayAgain .';
 }
 
 #player{
@@ -16,4 +17,8 @@ body{
 
 #result{
     grid-area: result;
+}
+
+#divButtonPlayAgain{
+    grid-area:  divButtonPlayAgain;
 }
