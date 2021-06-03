@@ -10,10 +10,12 @@ body{
 
 #player{
     grid-area: player;
+    border: 1px solid black;
 }
 
 #bot{
     grid-area: bot;
+    border: 1px solid black;
 }
 
 #result{
