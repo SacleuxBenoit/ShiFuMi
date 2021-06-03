@@ -1,6 +1,6 @@
 <?php
-include('../login_database.php');
-include('../database/connection_database.php');
+include('./login_database.php');
+include('./database/connection_database.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@ include('../database/connection_database.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/style_game.css">
+    <link rel="stylesheet" href="./css/style_game.css">
     <title>SHIFUMI - game</title>
 </head>
 <body>
@@ -47,6 +47,6 @@ include('../database/connection_database.php');
         <button id="buttonPlayAgain" onclick="buttonReset()">Play again</button>
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
