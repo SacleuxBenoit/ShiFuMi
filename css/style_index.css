@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    '. player bot .'
+    '. result result .'
+    '. divButtonPlayAgain divButtonPlayAgain .';
+    font-size: 2em;
+}
+
+#player{
+    grid-area: player;
+}
+
+#bot{
+    grid-area: bot;
+}
+
+#result{
+    grid-area: result;
+}
+
+#divButtonPlayAgain{
+    grid-area:  divButtonPlayAgain;
+}

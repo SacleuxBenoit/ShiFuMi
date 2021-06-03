@@ -8,7 +8,7 @@ include('./database/connection_database.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style_game.css">
+    <link rel="stylesheet" href="./css/style_index.css">
     <title>SHIFUMI - game</title>
 </head>
 <body>
