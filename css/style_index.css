@@ -22,6 +22,6 @@ body{
     grid-area: result;
 }
 
-#divButtonPlayAgain{
+#divButtonReset{
     grid-area:  divButtonPlayAgain;
 }
