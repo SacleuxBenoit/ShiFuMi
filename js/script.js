@@ -11,12 +11,6 @@ let playerRock = document.getElementById('playerRock');
 let playerPaper = document.getElementById('playerPaper');
 let playerScissors = document.getElementById('playerScissors');
 
-// get Button bot
-
-let botRock = document.getElementById('botRock');
-let botPaper = document.getElementById('botPaper');
-let botScissors = document.getElementById('botScissors');
-
 // get score player && bot
 
 let paragraphScorePlayer = document.getElementById('paragraphScorePlayer');
