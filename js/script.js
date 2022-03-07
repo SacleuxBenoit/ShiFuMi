@@ -17,15 +17,15 @@ let botRock = document.getElementById('botRock');
 let botPaper = document.getElementById('botPaper');
 let botScissors = document.getElementById('botScissors');
 
-// get life player && bot
+// get score player && bot
 
-let paragraphLifePlayer = document.getElementById('paragraphLifePlayer');
-let paragraphLifeBot = document.getElementById('paragraphLifeBot');
+let paragraphScorePlayer = document.getElementById('paragraphScorePlayer');
+let paragraphScoreBot = document.getElementById('paragraphScoreBot');
 
-// init life of player && bot
+// init score of player && bot
 
-let lifePlayer = 3;
-let lifeBot = 3;
+let scorePlayer = 0;
+let scoreBot = 0;
 
 // function button
 
@@ -76,14 +76,14 @@ function botChoice(){
     
             case 'paper':
                 result.textContent = 'the player lost this round';
-                lifePlayer -= 1;
-                paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
+                scoreBot += 1;
+                paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
             case 'scissors':
                 result.textContent = 'the player won this round';
-                lifeBot -= 1;
-                paragraphLifeBot.textContent = 'life : ' + lifeBot;
+                scorePlayer += 1;
+                paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
         }
     }
@@ -92,8 +92,8 @@ function botChoice(){
 
             case 'rock':
                 result.textContent = 'the player won this round';
-                lifeBot -= 1;
-                paragraphLifeBot.textContent = 'life : ' + lifeBot;
+                scorePlayer += 1;
+                paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
     
             case 'paper':
@@ -102,8 +102,8 @@ function botChoice(){
     
             case 'scissors':
                 result.textContent = 'the player lost this round';
-                lifePlayer -= 1;
-                paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
+                scoreBot += 1;
+                paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
         }
     }
@@ -112,14 +112,14 @@ function botChoice(){
 
             case 'rock':
                 result.textContent = 'the player lost this round';
-                lifePlayer -= 1;
-                paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
+                scoreBot += 1;
+                paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
             case 'paper':
                 result.textContent = 'the player won this round';
-                lifeBot -= 1
-                paragraphLifeBot.textContent = 'life : ' + lifeBot;
+                scorePlayer += 1
+                paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
     
             case 'scissors':
@@ -153,11 +153,11 @@ function disableButtonPlayer(){
 }
 
 function buttonReset(){
-    lifePlayer = 3;
-    lifeBot = 3;
+    scorePlayer = 0;
+    scoreBot = 0;
 
-    paragraphLifePlayer.textContent = 'life : ' + lifePlayer;
-    paragraphLifeBot.textContent = 'life : ' + lifeBot;
+    paragraphScorePlayer.textContent = 'life : ' + lifePlayer;
+    paragraphScoreBot.textContent = 'life : ' + lifeBot;
     result.textContent = " ";
     choicePlayerImages.textContent = "PlacerHolder image";
     choiceBotImages.textContent = "PlacerHolder image";
