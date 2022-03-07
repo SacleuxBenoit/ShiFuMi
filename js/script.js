@@ -75,13 +75,13 @@ function botChoice(){
             break;
     
             case 'paper':
-                result.textContent = 'the player lost this round';
+                result.textContent = 'Player lost this round';
                 scoreBot += 1;
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
             case 'scissors':
-                result.textContent = 'the player won this round';
+                result.textContent = 'Player won this round';
                 scorePlayer += 1;
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
@@ -91,7 +91,7 @@ function botChoice(){
         switch(choice[randomChoice]){
 
             case 'rock':
-                result.textContent = 'the player won this round';
+                result.textContent = 'Player won this round';
                 scorePlayer += 1;
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
@@ -101,7 +101,7 @@ function botChoice(){
             break;
     
             case 'scissors':
-                result.textContent = 'the player lost this round';
+                result.textContent = 'Player lost this round';
                 scoreBot += 1;
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
@@ -111,13 +111,13 @@ function botChoice(){
         switch(choice[randomChoice]){
 
             case 'rock':
-                result.textContent = 'the player lost this round';
+                result.textContent = 'Player lost this round';
                 scoreBot += 1;
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
             case 'paper':
-                result.textContent = 'the player won this round';
+                result.textContent = 'Player won this round';
                 scorePlayer += 1
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
@@ -135,14 +135,14 @@ function botChoice(){
 function verifyLifePlayer(){
     if(lifePlayer == 0){
         disableButtonPlayer();
-        result.textContent = "the winner is : the bot"
+        result.textContent = "winner is : Bot"
     }
 }
 
 function verifyLifeBot(){
     if(lifeBot == 0){
         disableButtonPlayer();
-        result.textContent = "the winner is : the player"
+        result.textContent = "winner is : Player"
     }
 }
 
@@ -156,8 +156,8 @@ function buttonReset(){
     scorePlayer = 0;
     scoreBot = 0;
 
-    paragraphScorePlayer.textContent = 'life : ' + lifePlayer;
-    paragraphScoreBot.textContent = 'life : ' + lifeBot;
+    paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
+    paragraphScoreBot.textContent = 'score : ' + scoreBot;
     result.textContent = " ";
     choicePlayerImages.textContent = "PlacerHolder image";
     choiceBotImages.textContent = "PlacerHolder image";
