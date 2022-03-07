@@ -127,23 +127,6 @@ function botChoice(){
             break;
         }
     }
-
-    verifyLifePlayer();
-    verifyLifeBot()
-}
-
-function verifyLifePlayer(){
-    if(lifePlayer == 0){
-        disableButtonPlayer();
-        result.textContent = "winner is : Bot"
-    }
-}
-
-function verifyLifeBot(){
-    if(lifeBot == 0){
-        disableButtonPlayer();
-        result.textContent = "winner is : Player"
-    }
 }
 
 function disableButtonPlayer(){
