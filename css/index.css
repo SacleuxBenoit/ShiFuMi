@@ -25,3 +25,7 @@ body{
 #divButtonReset{
     grid-area:  divButtonPlayAgain;
 }
+
+button{
+    border-radius: 40%;
+}
