@@ -67,38 +67,49 @@ function botChoice(){
         switch(choice[randomChoice]){
 
             case 'rock':
-                result.textContent = "it's a tie !"
+                result.textContent = "it's a tie !";
+                strike = 0;
+                displayBestStrike.textContent = "best strike : " + strike
             break;
     
             case 'paper':
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
+                strike = 0;
+                displayBestStrike.textContent = "best strike : " + strike
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
             case 'scissors':
                 result.textContent = 'Player won this round';
                 scorePlayer += 1;
+                strike += 1
+                displayBestStrike.textContent = "best strike : " + strike
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
         }
     }
     else if(result.textContent == 'paper'){
         switch(choice[randomChoice]){
-
             case 'rock':
                 result.textContent = 'Player won this round';
                 scorePlayer += 1;
+                strike +=1;
+                displayBestStrike.textContent = "best strike : " + strike
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
     
             case 'paper':
+                strike = 0;
+                displayBestStrike.textContent = "best strike : " + strike;
                 result.textContent = "it's a tie !"
             break;
     
             case 'scissors':
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
+                strike = 0;
+                displayBestStrike.textContent = "best strike : " + strike
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
         }
@@ -109,17 +120,23 @@ function botChoice(){
             case 'rock':
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
+                strike = 0;
+                displayBestStrike.textContent = "best strike : " + strike
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
             case 'paper':
                 result.textContent = 'Player won this round';
-                scorePlayer += 1
+                scorePlayer += 1;
+                strike +=1;
+                displayBestStrike.textContent = "best strike : " + strike
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
     
             case 'scissors':
                 result.textContent = "it's a tie !"
+                strike = 0;
+                displayBestStrike.textContent = "best strike : " + strike
             break;
         }
     }
