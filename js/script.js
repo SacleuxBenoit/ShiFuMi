@@ -21,7 +21,7 @@ let paragraphScoreBot = document.getElementById('paragraphScoreBot');
 
 let scorePlayer = 0;
 let scoreBot = 0;
-let strike = 0;
+let winStrike = 0;
 
 // function button
 
@@ -68,23 +68,23 @@ function botChoice(){
 
             case 'rock':
                 result.textContent = "it's a tie !";
-                strike = 0;
-                displayBestStrike.textContent = "best strike : " + strike
+                winStrike = 0;
+                displayBestStrike.textContent = "best strike : " + winStrike
             break;
     
             case 'paper':
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
-                strike = 0;
-                displayBestStrike.textContent = "best strike : " + strike
+                winStrike = 0;
+                displayBestStrike.textContent = "best strike : " + winStrike
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
             case 'scissors':
                 result.textContent = 'Player won this round';
                 scorePlayer += 1;
-                strike += 1
-                displayBestStrike.textContent = "best strike : " + strike
+                winStrike += 1
+                displayBestStrike.textContent = "best strike : " + winStrike
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
         }
@@ -94,22 +94,22 @@ function botChoice(){
             case 'rock':
                 result.textContent = 'Player won this round';
                 scorePlayer += 1;
-                strike +=1;
-                displayBestStrike.textContent = "best strike : " + strike
+                winStrike +=1;
+                displayBestStrike.textContent = "best strike : " + winStrike
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
     
             case 'paper':
-                strike = 0;
-                displayBestStrike.textContent = "best strike : " + strike;
+                winStrike = 0;
+                displayBestStrike.textContent = "best strike : " + winStrike;
                 result.textContent = "it's a tie !"
             break;
     
             case 'scissors':
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
-                strike = 0;
-                displayBestStrike.textContent = "best strike : " + strike
+                winStrike = 0;
+                displayBestStrike.textContent = "best strike : " + winStrike
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
         }
@@ -120,23 +120,23 @@ function botChoice(){
             case 'rock':
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
-                strike = 0;
-                displayBestStrike.textContent = "best strike : " + strike
+                winStrike = 0;
+                displayBestStrike.textContent = "best strike : " + winStrike
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
             case 'paper':
                 result.textContent = 'Player won this round';
                 scorePlayer += 1;
-                strike +=1;
-                displayBestStrike.textContent = "best strike : " + strike
+                winStrike +=1;
+                displayBestStrike.textContent = "best strike : " + winStrike
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
     
             case 'scissors':
                 result.textContent = "it's a tie !"
-                strike = 0;
-                displayBestStrike.textContent = "best strike : " + strike
+                winStrike = 0;
+                displayBestStrike.textContent = "best strike : " + winStrike
             break;
         }
     }

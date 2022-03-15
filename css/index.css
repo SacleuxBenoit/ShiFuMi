@@ -7,24 +7,20 @@ body{
     '. divButtonPlayAgain divButtonPlayAgain .'
     '. displayBestStrike displayBestStrike .';
     font-size: 2em;
-    background-color: rgb(51, 51, 51);
 }
 
 #player{
     grid-area: player;
     border: 1px solid black;
-    background-color: rgb(124, 124, 124);
 }
 
 #bot{
     grid-area: bot;
     border: 1px solid black;
-    background-color: rgb(124, 124, 124);
 }
 
 #result{
     grid-area: result;
-    color: white;
 }
 
 #divButtonReset{
@@ -33,9 +29,4 @@ body{
 
 #displayBestStrike{
     grid-area: displayBestStrike;
-    color: white;
-}
-
-button{
-    border-radius: 40%;
 }
