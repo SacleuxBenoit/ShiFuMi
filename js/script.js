@@ -1,6 +1,7 @@
 let player = document.getElementById('player');
 let bot = document.getElementById('bot');
 let result = document.getElementById('result');
+let displayBestStrike = document.getElementById('displayBestStrike')
 
 let choicePlayerImages = document.getElementById('choicePlayerImages');
 let choiceBotImages = document.getElementById('choiceBotImages');
@@ -20,6 +21,7 @@ let paragraphScoreBot = document.getElementById('paragraphScoreBot');
 
 let scorePlayer = 0;
 let scoreBot = 0;
+let strike = 0;
 
 // function button
 

@@ -4,7 +4,8 @@ body{
     grid-template-areas: 
     '. player bot .'
     '. result result .'
-    '. divButtonPlayAgain divButtonPlayAgain .';
+    '. divButtonPlayAgain divButtonPlayAgain .'
+    '. displayBestStrike displayBestStrike .';
     font-size: 2em;
     background-color: rgb(51, 51, 51);
 }
@@ -12,14 +13,12 @@ body{
 #player{
     grid-area: player;
     border: 1px solid black;
-    border-radius: 10%;
     background-color: rgb(124, 124, 124);
 }
 
 #bot{
     grid-area: bot;
     border: 1px solid black;
-    border-radius: 10%;
     background-color: rgb(124, 124, 124);
 }
 
@@ -30,6 +29,11 @@ body{
 
 #divButtonReset{
     grid-area:  divButtonPlayAgain;
+}
+
+#displayBestStrike{
+    grid-area: displayBestStrike;
+    color: white;
 }
 
 button{
