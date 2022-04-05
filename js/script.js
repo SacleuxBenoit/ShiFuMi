@@ -151,10 +151,12 @@ function disableButtonPlayer(){
 function buttonReset(){
     scorePlayer = 0;
     scoreBot = 0;
+    winStrike = 0;
 
     paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
     paragraphScoreBot.textContent = 'score : ' + scoreBot;
     result.textContent = " ";
     choicePlayerImages.textContent = "PlacerHolder image";
     choiceBotImages.textContent = "PlacerHolder image";
+    displayBestStrike.textContent = "best strike : " + winStrike
 }
