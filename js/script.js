@@ -71,14 +71,14 @@ function botChoice(){
             case 'rock':
                 result.textContent = "it's a tie !";
                 winStrike = 0;
-                displayCurrentStrike.textContent = "current strike : " + winStrike
+                displayCurrentStrike.textContent = "current strike : " + winStrike;
             break;
     
             case 'paper':
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
                 winStrike = 0;
-                displayCurrentStrike.textContent = "current strike : " + winStrike
+                displayCurrentStrike.textContent = "current strike : " + winStrike;
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
@@ -87,7 +87,7 @@ function botChoice(){
                 totalScore += 1;
                 winStrike += 1;
                 verifyBestStrike();
-                displayCurrentStrike.textContent = "current strike : " + winStrike
+                displayCurrentStrike.textContent = "current strike : " + winStrike;
                 paragraphtotalScore.textContent = 'score : ' + totalScore;
             break;
         }
@@ -99,21 +99,21 @@ function botChoice(){
                 totalScore += 1;
                 winStrike +=1;
                 verifyBestStrike();
-                displayCurrentStrike.textContent = "current strike : " + winStrike
+                displayCurrentStrike.textContent = "current strike : " + winStrike;
                 paragraphtotalScore.textContent = 'score : ' + totalScore;
             break;
     
             case 'paper':
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
-                result.textContent = "it's a tie !"
+                result.textContent = "it's a tie !";
             break;
     
             case 'scissors':
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
                 winStrike = 0;
-                displayCurrentStrike.textContent = "current strike : " + winStrike
+                displayCurrentStrike.textContent = "current strike : " + winStrike;
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
         }
@@ -125,7 +125,7 @@ function botChoice(){
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
                 winStrike = 0;
-                displayCurrentStrike.textContent = "current strike : " + winStrike
+                displayCurrentStrike.textContent = "current strike : " + winStrike;
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
@@ -134,14 +134,14 @@ function botChoice(){
                 totalScore += 1;
                 winStrike +=1;
                 verifyBestStrike();
-                displayCurrentStrike.textContent = "current strike : " + winStrike
+                displayCurrentStrike.textContent = "current strike : " + winStrike;
                 paragraphtotalScore.textContent = 'score : ' + totalScore;
             break;
     
             case 'scissors':
-                result.textContent = "it's a tie !"
+                result.textContent = "it's a tie !";
                 winStrike = 0;
-                displayCurrentStrike.textContent = "current strike : " + winStrike
+                displayCurrentStrike.textContent = "current strike : " + winStrike;
             break;
         }
     }
@@ -163,7 +163,7 @@ function buttonReset(){
     result.textContent = " ";
     choicePlayerImages.textContent = "PlacerHolder image";
     choiceBotImages.textContent = "PlacerHolder image";
-    displayCurrentStrike.textContent = "current strike : " + winStrike
+    displayCurrentStrike.textContent = "current strike : " + winStrike;
 }
 
 function verifyBestStrike(){
