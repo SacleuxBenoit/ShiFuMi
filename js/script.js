@@ -157,6 +157,7 @@ function buttonReset(){
     totalScore = 0;
     scoreBot = 0;
     winStrike = 0;
+    bestStrike = 0;
 
     paragraphtotalScore.textContent = 'score : ' + totalScore;
     paragraphScoreBot.textContent = 'score : ' + scoreBot;
@@ -164,6 +165,7 @@ function buttonReset(){
     choicePlayerImages.textContent = "PlacerHolder image";
     choiceBotImages.textContent = "PlacerHolder image";
     displayCurrentStrike.textContent = "current strike : " + winStrike;
+    displayBestStrike.textContent = "Best strike : " + bestStrike;
 }
 
 function verifyBestStrike(){
