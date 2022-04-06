@@ -1,7 +1,8 @@
 let player = document.getElementById('player');
 let bot = document.getElementById('bot');
 let result = document.getElementById('result');
-let displayCurrentStrike = document.getElementById('displayCurrentStrike')
+let displayCurrentStrike = document.getElementById('displayCurrentStrike');
+let displayBestStrike = document.getElementById('displayBestStrike');
 
 let choicePlayerImages = document.getElementById('choicePlayerImages');
 let choiceBotImages = document.getElementById('choiceBotImages');
@@ -14,14 +15,15 @@ let playerScissors = document.getElementById('playerScissors');
 
 // get score player && bot
 
-let paragraphScorePlayer = document.getElementById('paragraphScorePlayer');
+let paragraphtotalScore = document.getElementById('paragraphtotalScore');
 let paragraphScoreBot = document.getElementById('paragraphScoreBot');
 
 // init score of player && bot
 
-let scorePlayer = 0;
+let totalScore = 0;
 let scoreBot = 0;
 let winStrike = 0;
+let bestStrike = 0;
 
 // function button
 
@@ -82,10 +84,11 @@ function botChoice(){
     
             case 'scissors':
                 result.textContent = 'Player won this round';
-                scorePlayer += 1;
-                winStrike += 1
+                totalScore += 1;
+                winStrike += 1;
+                verifyBestStrike();
                 displayCurrentStrike.textContent = "current strike : " + winStrike
-                paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
+                paragraphtotalScore.textContent = 'score : ' + totalScore;
             break;
         }
     }
@@ -93,10 +96,11 @@ function botChoice(){
         switch(choice[randomChoice]){
             case 'rock':
                 result.textContent = 'Player won this round';
-                scorePlayer += 1;
+                totalScore += 1;
                 winStrike +=1;
+                verifyBestStrike();
                 displayCurrentStrike.textContent = "current strike : " + winStrike
-                paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
+                paragraphtotalScore.textContent = 'score : ' + totalScore;
             break;
     
             case 'paper':
@@ -127,10 +131,11 @@ function botChoice(){
     
             case 'paper':
                 result.textContent = 'Player won this round';
-                scorePlayer += 1;
+                totalScore += 1;
                 winStrike +=1;
+                verifyBestStrike();
                 displayCurrentStrike.textContent = "current strike : " + winStrike
-                paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
+                paragraphtotalScore.textContent = 'score : ' + totalScore;
             break;
     
             case 'scissors':
@@ -149,14 +154,21 @@ function disableButtonPlayer(){
 }
 
 function buttonReset(){
-    scorePlayer = 0;
+    totalScore = 0;
     scoreBot = 0;
     winStrike = 0;
 
-    paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
+    paragraphtotalScore.textContent = 'score : ' + totalScore;
     paragraphScoreBot.textContent = 'score : ' + scoreBot;
     result.textContent = " ";
     choicePlayerImages.textContent = "PlacerHolder image";
     choiceBotImages.textContent = "PlacerHolder image";
     displayCurrentStrike.textContent = "current strike : " + winStrike
+}
+
+function verifyBestStrike(){
+    if(winStrike > bestStrike){
+        bestStrike +=1;
+        displayBestStrike.textContent = "Best strike : " + bestStrike;
+    }
 }
