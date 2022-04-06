@@ -27,6 +27,6 @@ body{
     grid-area:  divButtonPlayAgain;
 }
 
-#displayBestStrike{
+#displayCurrentStrike{
     grid-area: displayBestStrike;
 }

@@ -1,7 +1,7 @@
 let player = document.getElementById('player');
 let bot = document.getElementById('bot');
 let result = document.getElementById('result');
-let displayBestStrike = document.getElementById('displayBestStrike')
+let displayCurrentStrike = document.getElementById('displayCurrentStrike')
 
 let choicePlayerImages = document.getElementById('choicePlayerImages');
 let choiceBotImages = document.getElementById('choiceBotImages');
@@ -69,14 +69,14 @@ function botChoice(){
             case 'rock':
                 result.textContent = "it's a tie !";
                 winStrike = 0;
-                displayBestStrike.textContent = "best strike : " + winStrike
+                displayCurrentStrike.textContent = "best strike : " + winStrike
             break;
     
             case 'paper':
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
                 winStrike = 0;
-                displayBestStrike.textContent = "best strike : " + winStrike
+                displayCurrentStrike.textContent = "best strike : " + winStrike
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
@@ -84,7 +84,7 @@ function botChoice(){
                 result.textContent = 'Player won this round';
                 scorePlayer += 1;
                 winStrike += 1
-                displayBestStrike.textContent = "best strike : " + winStrike
+                displayCurrentStrike.textContent = "best strike : " + winStrike
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
         }
@@ -95,13 +95,13 @@ function botChoice(){
                 result.textContent = 'Player won this round';
                 scorePlayer += 1;
                 winStrike +=1;
-                displayBestStrike.textContent = "best strike : " + winStrike
+                displayCurrentStrike.textContent = "best strike : " + winStrike
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
     
             case 'paper':
                 winStrike = 0;
-                displayBestStrike.textContent = "best strike : " + winStrike;
+                displayCurrentStrike.textContent = "best strike : " + winStrike;
                 result.textContent = "it's a tie !"
             break;
     
@@ -109,7 +109,7 @@ function botChoice(){
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
                 winStrike = 0;
-                displayBestStrike.textContent = "best strike : " + winStrike
+                displayCurrentStrike.textContent = "best strike : " + winStrike
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
         }
@@ -121,7 +121,7 @@ function botChoice(){
                 result.textContent = 'Player lost this round';
                 scoreBot += 1;
                 winStrike = 0;
-                displayBestStrike.textContent = "best strike : " + winStrike
+                displayCurrentStrike.textContent = "best strike : " + winStrike
                 paragraphScoreBot.textContent = 'score : ' + scoreBot;
             break;
     
@@ -129,14 +129,14 @@ function botChoice(){
                 result.textContent = 'Player won this round';
                 scorePlayer += 1;
                 winStrike +=1;
-                displayBestStrike.textContent = "best strike : " + winStrike
+                displayCurrentStrike.textContent = "best strike : " + winStrike
                 paragraphScorePlayer.textContent = 'score : ' + scorePlayer;
             break;
     
             case 'scissors':
                 result.textContent = "it's a tie !"
                 winStrike = 0;
-                displayBestStrike.textContent = "best strike : " + winStrike
+                displayCurrentStrike.textContent = "best strike : " + winStrike
             break;
         }
     }
@@ -158,5 +158,5 @@ function buttonReset(){
     result.textContent = " ";
     choicePlayerImages.textContent = "PlacerHolder image";
     choiceBotImages.textContent = "PlacerHolder image";
-    displayBestStrike.textContent = "best strike : " + winStrike
+    displayCurrentStrike.textContent = "current strike : " + winStrike
 }
