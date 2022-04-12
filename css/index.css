@@ -5,8 +5,7 @@ body{
     '. player bot .'
     '. result result .'
     '. divButtonPlayAgain divButtonPlayAgain .'
-    '. displayCurrentStrike displayCurrentStrike .'
-    '. displayBestStrike displayBestStrike .';
+    '. containerStats containerStats .';
     font-size: 2em;
 }
 
@@ -28,10 +27,6 @@ body{
     grid-area:  divButtonPlayAgain;
 }
 
-#displayCurrentStrike{
-    grid-area: displayCurrentStrike;
-}
-
-#displayBestStrike{
-    grid-area: displayBestStrike;
+.containerStats{
+    grid-area: containerStats;
 }

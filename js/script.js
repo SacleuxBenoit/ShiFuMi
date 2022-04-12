@@ -70,12 +70,14 @@ function botChoice(){
 
             case 'rock':
                 result.textContent = "it's a tie !";
+                result.style.color = "black";
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
             break;
     
             case 'paper':
                 result.textContent = 'Player lost this round';
+                result.style.color = "red";
                 scoreBot += 1;
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
@@ -84,6 +86,7 @@ function botChoice(){
     
             case 'scissors':
                 result.textContent = 'Player won this round';
+                result.style.color = "green";
                 totalScore += 1;
                 winStrike += 1;
                 verifyBestStrike();
@@ -96,6 +99,7 @@ function botChoice(){
         switch(choice[randomChoice]){
             case 'rock':
                 result.textContent = 'Player won this round';
+                result.style.color = "green";
                 totalScore += 1;
                 winStrike +=1;
                 verifyBestStrike();
@@ -107,10 +111,12 @@ function botChoice(){
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
                 result.textContent = "it's a tie !";
+                result.style.color = "black";
             break;
     
             case 'scissors':
                 result.textContent = 'Player lost this round';
+                result.style.color = "red";
                 scoreBot += 1;
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
@@ -120,9 +126,9 @@ function botChoice(){
     }
     else if(result.textContent == 'scissors'){
         switch(choice[randomChoice]){
-
             case 'rock':
                 result.textContent = 'Player lost this round';
+                result.style.color = "red";
                 scoreBot += 1;
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
@@ -131,6 +137,7 @@ function botChoice(){
     
             case 'paper':
                 result.textContent = 'Player won this round';
+                result.style.color = "green";
                 totalScore += 1;
                 winStrike +=1;
                 verifyBestStrike();
@@ -140,6 +147,7 @@ function botChoice(){
     
             case 'scissors':
                 result.textContent = "it's a tie !";
+                result.style.color = "black";
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
             break;
