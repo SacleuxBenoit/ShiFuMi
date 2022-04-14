@@ -1,6 +1,10 @@
 let player = document.getElementById('player');
 let bot = document.getElementById('bot');
 let result = document.getElementById('result');
+
+// Stats
+let containerStats = document.getElementById('containerStats');
+let buttonDisplayStats = document.getElementById('buttonDisplayStats');
 let displayCurrentStrike = document.getElementById('displayCurrentStrike');
 let displayBestStrike = document.getElementById('displayBestStrike');
 
@@ -25,6 +29,8 @@ let scoreBot = 0;
 let winStrike = 0;
 let bestStrike = 0;
 
+// hide div containerStats 
+containerStats.style.visibility = "hidden";
 // function button
 
 function rock(){
@@ -180,5 +186,16 @@ function verifyBestStrike(){
     if(winStrike > bestStrike){
         bestStrike +=1;
         displayBestStrike.textContent = "Best strike : " + bestStrike;
+    }
+}
+
+function showStats(){
+    if(containerStats.style.visibility == "hidden"){
+        containerStats.style.visibility = "visible";
+        buttonDisplayStats.textContent = "hide stats ↑"
+    }else{
+        containerStats.style.visibility = "hidden";
+        buttonDisplayStats.textContent = "show stats ↓"
+
     }
 }

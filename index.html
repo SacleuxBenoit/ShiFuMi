@@ -36,14 +36,15 @@
         <p id="paragraphScoreBot">Score : 0</p>
     </div>
 
-    <div class="containerStats">
+    <div class="containerStats" id="containerStats">
         <p id="result"></p>
         <p id="displayCurrentStrike">current strike : 0</p>
         <p id="displayBestStrike">best strike : 0</p>
     </div>
-    
+
     <div id="divButtonReset">
-        <button type="button" class="btn btn-outline-danger" id="buttonReset" onclick="buttonReset()">Reset</button>
+        <button class="btn btn-outline-danger" id="buttonReset" onclick="buttonReset()">Reset</button>
+        <button class="btn btn-info" id="buttonDisplayStats" onclick="showStats()">show stats ↓</button>
     </div>
 
     <script src="./js/script.js"></script>
