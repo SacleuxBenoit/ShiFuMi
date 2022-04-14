@@ -70,7 +70,7 @@ function botChoice(){
 
             case 'rock':
                 result.textContent = "it's a tie !";
-                result.style.color = "black";
+                result.style.color = "#41729F";
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
             break;
@@ -81,7 +81,7 @@ function botChoice(){
                 scoreBot += 1;
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
-                paragraphScoreBot.textContent = 'score : ' + scoreBot;
+                paragraphScoreBot.textContent = 'Score : ' + scoreBot;
             break;
     
             case 'scissors':
@@ -91,7 +91,7 @@ function botChoice(){
                 winStrike += 1;
                 verifyBestStrike();
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
-                paragraphtotalScore.textContent = 'score : ' + totalScore;
+                paragraphtotalScore.textContent = 'Score : ' + totalScore;
             break;
         }
     }
@@ -104,14 +104,14 @@ function botChoice(){
                 winStrike +=1;
                 verifyBestStrike();
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
-                paragraphtotalScore.textContent = 'score : ' + totalScore;
+                paragraphtotalScore.textContent = 'Score : ' + totalScore;
             break;
     
             case 'paper':
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
                 result.textContent = "it's a tie !";
-                result.style.color = "black";
+                result.style.color = "#41729F";
             break;
     
             case 'scissors':
@@ -120,7 +120,7 @@ function botChoice(){
                 scoreBot += 1;
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
-                paragraphScoreBot.textContent = 'score : ' + scoreBot;
+                paragraphScoreBot.textContent = 'Score : ' + scoreBot;
             break;
         }
     }
@@ -132,7 +132,7 @@ function botChoice(){
                 scoreBot += 1;
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
-                paragraphScoreBot.textContent = 'score : ' + scoreBot;
+                paragraphScoreBot.textContent = 'Score : ' + scoreBot;
             break;
     
             case 'paper':
@@ -142,12 +142,12 @@ function botChoice(){
                 winStrike +=1;
                 verifyBestStrike();
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
-                paragraphtotalScore.textContent = 'score : ' + totalScore;
+                paragraphtotalScore.textContent = 'Score : ' + totalScore;
             break;
     
             case 'scissors':
                 result.textContent = "it's a tie !";
-                result.style.color = "black";
+                result.style.color = "#41729F";
                 winStrike = 0;
                 displayCurrentStrike.textContent = "current strike : " + winStrike;
             break;
@@ -167,11 +167,11 @@ function buttonReset(){
     winStrike = 0;
     bestStrike = 0;
 
-    paragraphtotalScore.textContent = 'score : ' + totalScore;
-    paragraphScoreBot.textContent = 'score : ' + scoreBot;
+    paragraphtotalScore.textContent = 'Score : ' + totalScore;
+    paragraphScoreBot.textContent = 'Score : ' + scoreBot;
     result.textContent = " ";
-    choicePlayerImages.textContent = "PlacerHolder image";
-    choiceBotImages.textContent = "PlacerHolder image";
+    // choicePlayerImages.textContent = "PlacerHolder image";
+    // choiceBotImages.textContent = "PlacerHolder image";
     displayCurrentStrike.textContent = "current strike : " + winStrike;
     displayBestStrike.textContent = "Best strike : " + bestStrike;
 }

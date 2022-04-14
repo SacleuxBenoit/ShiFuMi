@@ -7,16 +7,18 @@ body{
     '. divButtonPlayAgain divButtonPlayAgain .'
     '. containerStats containerStats .';
     font-size: 2em;
+    background-color: black;
+    color: white;
 }
 
 #player{
     grid-area: player;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 #bot{
     grid-area: bot;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 #result{
