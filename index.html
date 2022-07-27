@@ -4,49 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/index.css">
     <title>SHIFUMI - game</title>
 </head>
-<body>
+<body class="bg-gray-700 text-white">
 
-    <div id="player">
-        <p id="choicePlayerImages">Player</p>
-        
-        <p>
-            <button type="button" class="btn btn-primary" onclick="rock()" id="playerRock">rock</button>
-            <button type="button" class="btn btn-primary" onclick="paper()" id="playerPaper">paper</button>
-            <button type="button" class="btn btn-primary" onclick="scissors()" id="playerScissors">scissors</button>
-        </p>
-
-        <p id="paragraphtotalScore">
-            Score : 0
-        </p>
+    <div class="grid grid-cols-2 text-center">
+        <div id="player" class="border border-2">
+            <p id="choicePlayerImages" class="text-4xl">Player</p>
+            
+            <p>
+                <button type="button" class="border border-2 bg-blue-500 hover:bg-blue-700 text-xl w-28" onclick="rock()" id="playerRock">rock</button>
+                <button type="button" class="border border-2 bg-blue-500 hover:bg-blue-700 text-xl w-28" onclick="paper()" id="playerPaper">paper</button>
+                <button type="button" class="border border-2 bg-blue-500 hover:bg-blue-700 text-xl w-28" onclick="scissors()" id="playerScissors">scissors</button>
+            </p>
+    
+            <p id="paragraphtotalScore" class="text-xl">Score : 0</p>
+        </div>
+    
+        <div id="bot" class="border border-2">
+            <p id="choiceBotImages" class="text-4xl">Computeur</p>
+            
+            <p>
+                <button type="button" class="border border-2 bg-blue-500 hover:bg-blue-700 text-xl w-28" disabled>rock</button>
+                <button type="button" class="border border-2 bg-blue-500 hover:bg-blue-700 text-xl w-28" disabled>paper</button>
+                <button type="button" class="border border-2 bg-blue-500 hover:bg-blue-700 text-xl w-28" disabled>scissors</button>
+            </p>
+    
+            <p id="paragraphScoreBot" class="text-xl">Score : 0</p>
+        </div>
     </div>
 
-    <div id="bot">
-        <p id="choiceBotImages">Computeur</p>
-        
-        <p>
-            <button type="button" class="btn btn-primary" disabled>rock</button>
-            <button type="button" class="btn btn-primary" disabled>paper</button>
-            <button type="button" class="btn btn-primary" disabled>scissors</button>
-        </p>
-
-        <p id="paragraphScoreBot">Score : 0</p>
+    <div id="divButtonReset" class="text-xl text-center pt-10">
+        <button class="border border-2 bg-red-800 hover:bg-red-500 text-xl w-28" id="buttonReset" onclick="buttonReset()">Reset</button>
+        <button class="border border-2 bg-blue-500 hover:bg-blue-700 text-xl w-28" id="buttonDisplayStats" onclick="showStats()">show stats</button>
     </div>
 
-    <div class="containerStats" id="containerStats">
+    <div class="containerStats text-xl text-center" id="containerStats">
         <p id="result"></p>
         <p id="displayCurrentStrike">current strike : 0</p>
         <p id="displayBestStrike">best strike : 0</p>
     </div>
-
-    <div id="divButtonReset">
-        <button class="btn btn-outline-danger" id="buttonReset" onclick="buttonReset()">Reset</button>
-        <button class="btn btn-info" id="buttonDisplayStats" onclick="showStats()">show stats ↓</button>
-    </div>
-
     <script src="./js/script.js"></script>
 </body>
 </html>

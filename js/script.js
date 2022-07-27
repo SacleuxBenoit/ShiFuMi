@@ -176,8 +176,6 @@ function buttonReset(){
     paragraphtotalScore.textContent = 'Score : ' + totalScore;
     paragraphScoreBot.textContent = 'Score : ' + scoreBot;
     result.textContent = " ";
-    // choicePlayerImages.textContent = "PlacerHolder image";
-    // choiceBotImages.textContent = "PlacerHolder image";
     displayCurrentStrike.textContent = "current strike : " + winStrike;
     displayBestStrike.textContent = "Best strike : " + bestStrike;
 }
@@ -192,10 +190,10 @@ function verifyBestStrike(){
 function showStats(){
     if(containerStats.style.visibility == "hidden"){
         containerStats.style.visibility = "visible";
-        buttonDisplayStats.textContent = "hide stats ↑"
+        buttonDisplayStats.textContent = "hide stats"
     }else{
         containerStats.style.visibility = "hidden";
-        buttonDisplayStats.textContent = "show stats ↓"
+        buttonDisplayStats.textContent = "show stats"
 
     }
 }
